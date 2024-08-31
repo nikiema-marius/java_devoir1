@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class GestionDesNotes {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Entrez le nombre etudiants : ");
+        System.out.print("Entrez le nombre etudiants de la classe : ");
         int nombreEtudiants = scanner.nextInt();
 
         // tableau pour stocker les notes
@@ -46,13 +46,13 @@ public class GestionDesNotes {
 
         // Afficher les statistiques
         System.out.println("Statistiques :");
-        System.out.println("a. La note du premier etudiant : " + premiereNote);
-        System.out.println("b. La note du dernier etudiant : " + derniereNote);
-        System.out.println("c. La moyenne de la classe : " + moyenne);
-        System.out.println("d. Nombre etudiants avec une note >= moyenne : " + nbAuMoinsMoyenne);
-        System.out.println("e. Nombre admis (note >= 10) : " + nbAdmis);
-        System.out.println("f. Nombre de recalés (note < 7) : " + nbRecales);
-        System.out.println("g. Nombre etudiants en rattrapage (7 <= note < 10) : " + nbRattrapage);
+        System.out.println("1--. La note du premier etudiant : " + premiereNote);
+        System.out.println("2--. La note du dernier etudiant : " + derniereNote);
+        System.out.println("3--. La moyenne de la classe : " + moyenne);
+        System.out.println("4--. Nombre etudiants avec une note >= moyenne : " + nbAuMoinsMoyenne);
+        System.out.println("5--. Nombre admis (note >= 10) : " + nbAdmis);
+        System.out.println("6--. Nombre de recales (note < 7) : " + nbRecales);
+        System.out.println("7--. Nombre etudiants en rattrapage (7 <= note < 10) : " + nbRattrapage);
 
         scanner.close();
     }
